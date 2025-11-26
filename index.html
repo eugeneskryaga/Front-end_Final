@@ -38,12 +38,13 @@
     <header class="header">
       <div class="container header_flex">
         <a
-          href="#"
+          href="#logo_link"
           class="header_logo"
           ><svg
             width="132"
             height="36"
             class="header__icon"
+            id="logo_link"
           >
             <use href="./ico/sprite.svg#icon-logo"></use></svg
         ></a>
@@ -51,28 +52,28 @@
           <ul class="header_navlist">
             <li class="header_navlist_item">
               <a
-                href="#"
+                href="#logo_link"
                 class="header_navlist_item__link"
                 >Home</a
               >
             </li>
             <li class="header_navlist_item">
               <a
-                href="#"
+                href="#menu_link"
                 class="header_navlist_item__link"
                 >Menu</a
               >
             </li>
             <li class="header_navlist_item">
               <a
-                href="#"
+                href="#events_link"
                 class="header_navlist_item__link"
                 >Events</a
               >
             </li>
             <li class="header_navlist_item">
               <a
-                href="#"
+                href="#about_link"
                 class="header_navlist_item__link"
                 >About us</a
               >
@@ -101,7 +102,10 @@
         <div class="container hero_flex">
           <div class="hero_article">
             <div class="hero_title">
-              <h1 class="hero_title_text">
+              <h1
+                class="hero_title_text"
+                id="hero_link"
+              >
                 The Fastest <br />
                 <span class="hero_title_text_spacing">Pizza Delivery</span>
               </h1>
@@ -131,22 +135,23 @@
             </div>
             <div class="hero_article_video">
               <p class="hero_article_text">Cooking process:</p>
-              <img
-                src="./img/hero_vid.png"
-                alt="cooking process"
+              <iframe
                 width="272"
                 height="194"
-                class="hero_article_image"
-              />
-              <svg
-                width="60"
-                height="60"
-                class="hero_article_play"
-              >
-                <use href="./ico/sprite.svg#icon-play2"></use>
-              </svg>
+                src="https://www.youtube.com/embed/F_UmiKMwRwA?si=9eERkvK9bSH1kwYR"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
-            <button class="button to_order_button">To order</button>
+            <button
+              class="button to_order_button"
+              id="to_order_link"
+            >
+              To order
+            </button>
             <div class="order_arrow">
               <svg
                 width="190"
@@ -179,19 +184,44 @@
       </section>
       <section class="menu">
         <div class="container menu_flex">
-          <h2 class="menu_title">Menu</h2>
+          <h2
+            class="menu_title"
+            id="menu_link"
+          >
+            Menu
+          </h2>
           <ul class="menu_filter">
             <li class="menu_filer_item">
-              <button class="button menu_filer_button">Show All</button>
+              <button
+                class="button menu_filer_button"
+                id="show_all_link"
+              >
+                Show All
+              </button>
             </li>
             <li class="menu_filer_item">
-              <button class="button menu_filer_button">Meat</button>
+              <button
+                class="button menu_filer_button"
+                id="meat_link"
+              >
+                Meat
+              </button>
             </li>
             <li class="menu_filer_item">
-              <button class="button menu_filer_button">Vegetarian</button>
+              <button
+                class="button menu_filer_button"
+                id="vegan_link"
+              >
+                Vegetarian
+              </button>
             </li>
             <li class="menu_filer_item">
-              <button class="button menu_filer_button">Sea products</button>
+              <button
+                class="button menu_filer_button"
+                id="sea_products_link"
+              >
+                Sea products
+              </button>
             </li>
             <li class="menu_filer_item">
               <button class="button menu_filer_button">Mushroom</button>
@@ -481,65 +511,123 @@
       <section class="events">
         <div class="container events_flex">
           <div class="events_poster how_we_coocking_poster">
-              <strong>HOW WE COOKING</strong
-              ><button class="events_more_button button">More</button>
+            <strong>HOW WE COOKING</strong
+            ><button class="events_more_button button">More</button>
           </div>
           <div class="events_poster our_blog_poster">
-              <strong class="events_poster_title">OUR BLOG</strong
-              ><button class="events_more_button button">More</button>
+            <strong class="events_poster_title">OUR BLOG</strong
+            ><button class="events_more_button button">More</button>
           </div>
           <div class="events_article">
-            <h2 class="events_article_title">Events</h2>
+            <h2
+              class="events_article_title"
+              id="events_link"
+            >
+              Events
               <p class="events_article_text">
-                  There are regular events in our pizzeria that will allow you
-                  to eat delicious food for a lower price!
+                There are regular events in our pizzeria that will allow you to
+                eat delicious food for a lower price!
               </p>
             </h2>
           </div>
           <div class="events_poster two_pizza_poster">
-              <strong class="events_poster_title">TWO PIZZA FOR 1 PRICE</strong
-              ><button class="events_more_button button">More</button>
-              <img src="./img/egg.png" alt="egg_image" class="events_poster_egg">
+            <strong
+              class="events_poster_title"
+              id="two_pizza_link"
+              >TWO PIZZA FOR 1 PRICE</strong
+            ><button class="events_more_button button">More</button>
+            <img
+              src="./img/egg.png"
+              alt="egg_image"
+              class="events_poster_egg"
+            />
           </div>
           <div class="events_poster kitchen_tour_poster">
-              <strong class="events_poster_title">KITCHEN TOUR</strong
-              ><button class="events_more_button button">More</button>
-              <img src="./img/buritto.png" alt="buritto_image" class="events_poster_buritto">
+            <strong
+              class="events_poster_title"
+              id="kitchen_tour_link"
+              >KITCHEN TOUR</strong
+            ><button class="events_more_button button">More</button>
+            <img
+              src="./img/buritto.png"
+              alt="buritto_image"
+              class="events_poster_buritto"
+            />
           </div>
           <div class="events_poster free_coffee_poster">
-              <strong class="events_poster_title">FREE COFFEE FOR 3 PIZZA</strong
-              ><button class="events_more_button button">More</button>
-              <img src="./img/cofee.png" alt="coffee_image" class="events_poster_coffe">
+            <strong
+              class="events_poster_title"
+              id="free_coffee_link"
+              >FREE COFFEE FOR 3 PIZZA</strong
+            ><button class="events_more_button button">More</button>
+            <img
+              src="./img/cofee.png"
+              alt="coffee_image"
+              class="events_poster_coffe"
+            />
           </div>
           <div class="events_poster our_instgram_poster">
-              <strong class="events_poster_title">OUR INSTAGRAM</strong
-              ><button class="events_more_button button">More</button>
+            <strong
+              class="events_poster_title"
+              id="history_link"
+              >OUR INSTAGRAM</strong
+            ><button class="events_more_button button">More</button>
           </div>
           <div class="events_poster where_poster">
-              <strong class="events_poster_title">WHERE ARE YOU CHOOSE US?</strong
-              ><button class="events_more_button button">More</button>
+            <strong
+              class="events_poster_title"
+              id="why_link"
+              >WHERE ARE YOU CHOOSE US?</strong
+            ><button class="events_more_button button">More</button>
           </div>
         </div>
       </section>
       <section class="about">
         <div class="container about_flex">
           <div class="about_article">
-            <h2 class="about_article_title">About us</h2>
-            <p class="about_article_text">In just a couple of years, we have opened 6 outlets in different cities: Kyiv, Dnipro, Kharkiv, Odesa, Lviv, and in the future we plan to develop the network in other major cities of Ukraine.</p>
-            <img src="./img/about_us.png" alt="pizzas_image">
-            <p class="about_article_text">The kitchen of each point is at least: 400-500 sq. m. meters, hundreds of employees, smoothly performing work in order to receive / prepare / form / deliver customer orders on time.</p>
+            <h2
+              class="about_article_title"
+              id="about_link"
+            >
+              About us
+            </h2>
+            <p class="about_article_text">
+              In just a couple of years, we have opened 6 outlets in different
+              cities: Kyiv, Dnipro, Kharkiv, Odesa, Lviv, and in the future we
+              plan to develop the network in other major cities of Ukraine.
+            </p>
+            <img
+              src="./img/about_us.png"
+              alt="pizzas_image"
+            />
+            <p class="about_article_text">
+              The kitchen of each point is at least: 400-500 sq. m. meters,
+              hundreds of employees, smoothly performing work in order to
+              receive / prepare / form / deliver customer orders on time.
+            </p>
             <svg
-                width="88"
-                height="54"
-                class="about_arrow"
-              >
-                <use href="./ico/sprite.svg#icon-arrow_long"></use>
-              </svg>
+              width="88"
+              height="54"
+              class="about_arrow"
+            >
+              <use href="./ico/sprite.svg#icon-arrow_long"></use>
+            </svg>
           </div>
           <div class="about_poster">
-            <img src="./img/about_us_big_pizza.png" alt="pizza_poster">
-            <img src="./img/pizza.png" alt="pizza_png" class="about_poster_pizza">
-            <img src="./img/fries.png" alt="fries_png" class="about_poster_fries">
+            <img
+              src="./img/about_us_big_pizza.png"
+              alt="pizza_poster"
+            />
+            <img
+              src="./img/pizza.png"
+              alt="pizza_png"
+              class="about_poster_pizza"
+            />
+            <img
+              src="./img/fries.png"
+              alt="fries_png"
+              class="about_poster_fries"
+            />
           </div>
         </div>
       </section>
@@ -547,47 +635,197 @@
     <footer class="footer">
       <div class="container">
         <ul class="footer_links">
-          <li class="footer_links_logo"><a href="#"><svg width="142" height="34" class="header__icon"><use href="./ico/sprite.svg#icon-logo"></use></svg></a></li>
+          <li class="footer_links_logo">
+            <a href="#logo_link"
+              ><svg
+                width="142"
+                height="34"
+                class="header__icon"
+              >
+                <use href="./ico/sprite.svg#icon-logo"></use></svg
+            ></a>
+          </li>
           <li>
             <ul class="footer_links_list">
-              <li class="footer_links_item"><a href="#" class="footer_links_link_main">Home</a></li>
-              <li class="footer_links_item"><a href="#" class="footer_links_link">To Order</a></li>
-              <li class="footer_links_item"><a href="#" class="footer_links_link">About us</a></li>
-              <li class="footer_links_item"><a href="#" class="footer_links_link">Events</a></li>
-              <li class="footer_links_item"><a href="#" class="footer_links_link">Menu</a></li>
+              <li class="footer_links_item">
+                <a
+                  href="#hero_link"
+                  class="footer_links_link_main"
+                  >Home</a
+                >
+              </li>
+              <li class="footer_links_item">
+                <a
+                  href="#to_order_link"
+                  class="footer_links_link"
+                  >To Order</a
+                >
+              </li>
+              <li class="footer_links_item">
+                <a
+                  href="#about_link"
+                  class="footer_links_link"
+                  >About us</a
+                >
+              </li>
+              <li class="footer_links_item">
+                <a
+                  href="#events_link"
+                  class="footer_links_link"
+                  >Events</a
+                >
+              </li>
+              <li class="footer_links_item">
+                <a
+                  href="#menu_link"
+                  class="footer_links_link"
+                  >Menu</a
+                >
+              </li>
             </ul>
           </li>
           <li>
             <ul class="footer_links_list">
-              <li class="footer_links_item"><a href="#" class="footer_links_link_main">Events</a></li>
-              <li class="footer_links_item"><a href="#" class="footer_links_link">3 Pizza 1 Free Coffee</a></li>
-              <li class="footer_links_item"><a href="#" class="footer_links_link">2 Pizza for 1 Price</a></li>
-              <li class="footer_links_item"><a href="#" class="footer_links_link">Kitchen Tour</a></li>
+              <li class="footer_links_item">
+                <a
+                  href="#events_link"
+                  class="footer_links_link_main"
+                  >Events</a
+                >
+              </li>
+              <li class="footer_links_item">
+                <a
+                  href="#free_coffee_link"
+                  class="footer_links_link"
+                  >3 Pizza 1 Free Coffee</a
+                >
+              </li>
+              <li class="footer_links_item">
+                <a
+                  href="#two_pizza_link"
+                  class="footer_links_link"
+                  >2 Pizza for 1 Price</a
+                >
+              </li>
+              <li class="footer_links_item">
+                <a
+                  href="#kitchen_tour_link"
+                  class="footer_links_link"
+                  >Kitchen Tour</a
+                >
+              </li>
             </ul>
           </li>
           <li>
             <ul class="footer_links_list">
-              <li class="footer_links_item"><a href="#" class="footer_links_link_main">Menu</a></li>
-              <li class="footer_links_item"><a href="#" class="footer_links_link">Show All</a></li>
-              <li class="footer_links_item"><a href="#" class="footer_links_link">Seaproducts</a></li>
-              <li class="footer_links_item"><a href="#" class="footer_links_link">Vegan</a></li>
-              <li class="footer_links_item"><a href="#" class="footer_links_link">Meat</a></li>
+              <li class="footer_links_item">
+                <a
+                  href="#menu_link"
+                  class="footer_links_link_main"
+                  >Menu</a
+                >
+              </li>
+              <li class="footer_links_item">
+                <a
+                  href="#show_all_link"
+                  class="footer_links_link"
+                  >Show All</a
+                >
+              </li>
+              <li class="footer_links_item">
+                <a
+                  href="#sea_products_link"
+                  class="footer_links_link"
+                  >Seaproducts</a
+                >
+              </li>
+              <li class="footer_links_item">
+                <a
+                  href="#vegan_link"
+                  class="footer_links_link"
+                  >Vegan</a
+                >
+              </li>
+              <li class="footer_links_item">
+                <a
+                  href="#meat_link"
+                  class="footer_links_link"
+                  >Meat</a
+                >
+              </li>
             </ul>
           </li>
           <li>
             <ul class="footer_links_list">
-              <li><a href="#" class="footer_links_link_main">About Us</a></li>
-              <li><a href="#" class="footer_links_link">Our History</a></li>
-              <li><a href="#" class="footer_links_link">Why We?</a></li>
+              <li>
+                <a
+                  href="#about_link"
+                  class="footer_links_link_main"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#history_link"
+                  class="footer_links_link"
+                  >Our History</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#why_link"
+                  class="footer_links_link"
+                  >Why We?</a
+                >
+              </li>
             </ul>
           </li>
         </ul>
         <div class="footer_contacts">
-          <address><a href="tel:+7 (937) 333-55-33" class="footer_phone">+7 (937) 333-55-33</a></address>
+          <address>
+            <a
+              href="tel:+7 (937) 333-55-33"
+              class="footer_phone"
+              >+7 (937) 333-55-33</a
+            >
+          </address>
           <ul class="footer_contacts_social">
-            <li><a href="#"><svg width="30" height="30" class="footer_icon"><use href="./ico/sprite.svg#icon-instagram"></use></svg></a></li>
-            <li><a href="#"><svg width="30" height="30" class="footer_icon"><use href="./ico/sprite.svg#icon-twitter"></use></svg></a></li>
-            <li><a href="#"><svg width="30" height="30" class="footer_icon"><use href="./ico/sprite.svg#icon-facebook"></use></svg></a></li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                ><svg
+                  width="30"
+                  height="30"
+                  class="footer_icon"
+                >
+                  <use href="./ico/sprite.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/?lang=uk"
+                target="_blank"
+                ><svg
+                  width="30"
+                  height="30"
+                  class="footer_icon"
+                >
+                  <use href="./ico/sprite.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/reg/?locale=uk_UA"
+                target="_blank"
+                ><svg
+                  width="30"
+                  height="30"
+                  class="footer_icon"
+                >
+                  <use href="./ico/sprite.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -599,9 +837,8 @@
 <!-- Адаптація -->
 <!-- Мобільне меню -->
 <!-- Анімація -->
-<!-- Картки піцц та івентів в окремий файл -->
-<!-- Відео замість пнг -->
+<!-- Відео замість пнг +++++++++++++++++++++++++++++++++ -->
 <!-- Адаптація графіки -->
-<!-- Налаштування посилань -->
+<!-- Налаштування посилань +++++++++++++++++++++++++++++ -->
 <!-- Загуглити градієнт -->
 <!-- Sass синтаксис -->

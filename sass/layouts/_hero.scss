@@ -43,18 +43,15 @@
     margin-bottom: 36px;
 }
 
-.hero_article_image {
-    margin-bottom: 58px;
-}
-
 .hero_article_video {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 60px;
 }
 
-.hero_article_play {
-    position: absolute;
-    top: 90px;
-    left: 104px;
+iframe {
+    border-radius: 30px;
 }
 
 .order_arrow {
