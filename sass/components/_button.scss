@@ -1,0 +1,65 @@
+.button {
+    background-color: #FF6432;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+.header_ico_list_button {
+    width: 164px;
+    height: 40px;
+}
+
+.to_order_button {
+    width: 194px;
+    height: 62px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.menu_filer_button {
+    width: 200px;
+    height: 62px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.menu_pizza_size_button {
+    width: 40px;
+    height: 40px;
+    color: #A3A3A3;
+    border: 2px solid #A3A3A3;
+    background-color: rgb(33, 10, 1);
+}
+
+.menu_pizza_ingradients_button {
+    width: 194px;
+    height: 38px;
+    border: 2px solid #FF6432;
+    color: #FF6432;
+    background-color: rgb(33, 10, 1);
+}
+
+.menu_pizza_order_button {
+    width: 194px;
+    height: 44px;
+}
+
+.events_more_button {
+    width: 204px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.active {
+    border: none;
+    color: white;
+    background-color: #FF6432;
+}
+

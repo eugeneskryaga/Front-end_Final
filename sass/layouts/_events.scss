@@ -1,0 +1,98 @@
+.events_flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.events_poster {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 48px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+    padding: 0 26px;
+    height: 260px;
+}
+
+.events_article {
+    width: 340px;
+    height: 200px;
+    padding: 16px;
+}
+
+.events_article_title {
+    font-size: 68px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-align: right;
+    margin-bottom: 6px;
+}
+
+.events_article_text {
+    color: #A3A3A3;
+    font-size: 20px;
+    text-align: right;
+}
+
+.how_we_coocking_poster {
+    background-image: url(../img/how_we_coocking.png);
+    width: 368px;
+}
+
+.our_blog_poster {
+    background-image: url(../img/our_blog.png);
+    width: 396px;
+}
+
+.two_pizza_poster {
+    background-image: url(../img/two_pizza.png);
+    width: 500px;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+}
+
+.kitchen_tour_poster {
+    background-image: url(../img/kitchen_tour.png);
+    width: 614px;
+    position: relative;
+}
+
+.free_coffee_poster {
+    background-image: url(../img/free_coffe.png);
+    width: 400px;
+    position: relative;
+}
+
+.our_instgram_poster {
+    background-image: url(../img/our_instagram.png);
+    width: 400px;
+}
+
+.where_poster {
+    background-image: url(../img/where.png);
+    width: 320px;
+    border-radius: 30px;
+}
+
+.events_poster_egg {
+    position: absolute;
+    left: -120px;
+    top: -140px;
+}
+
+.events_poster_buritto {
+    position: absolute;
+    right: -120px;
+}
+
+.events_poster_coffe {
+    position: absolute;
+    bottom: -90px;
+    left: -120px;
+}
+

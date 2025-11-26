@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Pizzashop</title>
+    <link
+      rel="icon"
+      href="./img/pizza.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/main.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header_flex">
+        <a
+          href="#"
+          class="header_logo"
+          ><svg
+            width="132"
+            height="36"
+            class="header__icon"
+          >
+            <use href="./ico/sprite.svg#icon-logo"></use></svg
+        ></a>
+        <nav>
+          <ul class="header_navlist">
+            <li class="header_navlist_item">
+              <a
+                href="#"
+                class="header_navlist_item__link"
+                >Home</a
+              >
+            </li>
+            <li class="header_navlist_item">
+              <a
+                href="#"
+                class="header_navlist_item__link"
+                >Menu</a
+              >
+            </li>
+            <li class="header_navlist_item">
+              <a
+                href="#"
+                class="header_navlist_item__link"
+                >Events</a
+              >
+            </li>
+            <li class="header_navlist_item">
+              <a
+                href="#"
+                class="header_navlist_item__link"
+                >About us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="header_ico_list">
+          <li class="header_ico_list_item">
+            <button class="button header_ico_list_button">Log in</button>
+          </li>
+          <li class="header_ico_list_item">
+            <a href="#"
+              ><svg
+                width="30"
+                height="30"
+                class="header__icon"
+              >
+                <use href="./ico/sprite.svg#icon-cart"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero_flex">
+          <div class="hero_article">
+            <div class="hero_title">
+              <h1 class="hero_title_text">
+                The Fastest <br />
+                <span class="hero_title_text_spacing">Pizza Delivery</span>
+              </h1>
+              <svg
+                width="88"
+                height="56"
+                class="hero_title_arrow"
+              >
+                <use href="./ico/sprite.svg#icon-arrow_short"></use>
+              </svg>
+              <svg
+                weight="48"
+                height="84"
+                class="hero_title_lightning"
+              >
+                <use href="./ico/sprite.svg#icon-lightning"></use>
+              </svg>
+            </div>
+            <div class="hero_slogan">
+              <p class="hero_article_text">
+                We will deliver juicy pizza for your family in 30
+              </p>
+              <p class="hero_article_text">
+                minutes, if the courier is late -
+                <span class="white_text">pizza is free!</span>
+              </p>
+            </div>
+            <div class="hero_article_video">
+              <p class="hero_article_text">Cooking process:</p>
+              <img
+                src="./img/hero_vid.png"
+                alt="cooking process"
+                width="272"
+                height="194"
+                class="hero_article_image"
+              />
+              <svg
+                width="60"
+                height="60"
+                class="hero_article_play"
+              >
+                <use href="./ico/sprite.svg#icon-play2"></use>
+              </svg>
+            </div>
+            <button class="button to_order_button">To order</button>
+            <div class="order_arrow">
+              <svg
+                width="190"
+                height="100"
+                class="order_arrow_icon"
+              >
+                <use href="./ico/sprite.svg#icon-arrow_long"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="hero_poster">
+            <img
+              src="./img/hero_poster.png"
+              alt="pizza_poster"
+              width="456"
+              height="684"
+            />
+            <img
+              class="hero_poster_fries"
+              src="./img/fries.png"
+              alt="fries"
+            />
+            <img
+              class="hero_poster_pizza"
+              src="./img/pizza.png"
+              alt="pizza"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="menu">
+        <div class="container menu_flex">
+          <h2 class="menu_title">Menu</h2>
+          <ul class="menu_filter">
+            <li class="menu_filer_item">
+              <button class="button menu_filer_button">Show All</button>
+            </li>
+            <li class="menu_filer_item">
+              <button class="button menu_filer_button">Meat</button>
+            </li>
+            <li class="menu_filer_item">
+              <button class="button menu_filer_button">Vegetarian</button>
+            </li>
+            <li class="menu_filer_item">
+              <button class="button menu_filer_button">Sea products</button>
+            </li>
+            <li class="menu_filer_item">
+              <button class="button menu_filer_button">Mushroom</button>
+            </li>
+          </ul>
+          <ul class="menu_pizza">
+            <li class="menu_pizza_item">
+              <div class="menu_pizza_card">
+                <img
+                  src="./img/italian.png"
+                  alt="pizza_italian"
+                  class="menu_pizza_image"
+                />
+                <strong class="menu_pizza_name">Italian</strong>
+                <p class="menu_pizza_desc">
+                  Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                  meat...
+                </p>
+                <ul class="menu_pizza_size">
+                  <li>
+                    <button class="menu_pizza_size_button button">22</button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button active">
+                      28
+                    </button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button">33</button>
+                  </li>
+                </ul>
+                <button class="menu_pizza_ingradients_button button">
+                  + Ingradients
+                </button>
+                <p class="menu_pizza_price">8,35 $</p>
+                <button class="menu_pizza_order_button button">
+                  Order Now
+                </button>
+              </div>
+            </li>
+            <li class="menu_pizza_item">
+              <div class="menu_pizza_card">
+                <img
+                  src="./img/venecia.png"
+                  alt="pizza_venecia"
+                  class="menu_pizza_image"
+                />
+                <strong class="menu_pizza_name">Venecia</strong>
+                <p class="menu_pizza_desc">
+                  Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                  meat...
+                </p>
+                <ul class="menu_pizza_size">
+                  <li>
+                    <button class="menu_pizza_size_button button">22</button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button active">
+                      28
+                    </button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button">33</button>
+                  </li>
+                </ul>
+                <button class="menu_pizza_ingradients_button button">
+                  + Ingradients
+                </button>
+                <p class="menu_pizza_price">7,35 $</p>
+                <button class="menu_pizza_order_button button">
+                  Order Now
+                </button>
+              </div>
+            </li>
+            <li class="menu_pizza_item">
+              <div class="menu_pizza_card">
+                <img
+                  src="./img/meat.png"
+                  alt="pizza_meat"
+                  class="menu_pizza_image"
+                />
+                <strong class="menu_pizza_name">Meat</strong>
+                <p class="menu_pizza_desc">
+                  Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                  meat...
+                </p>
+                <ul class="menu_pizza_size">
+                  <li>
+                    <button class="menu_pizza_size_button button">22</button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button active">
+                      28
+                    </button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button">33</button>
+                  </li>
+                </ul>
+                <button class="menu_pizza_ingradients_button button">
+                  + Ingradients
+                </button>
+                <p class="menu_pizza_price">9,35 $</p>
+                <button class="menu_pizza_order_button button">
+                  Order Now
+                </button>
+              </div>
+            </li>
+            <li class="menu_pizza_item">
+              <div class="menu_pizza_card">
+                <img
+                  src="./img/cheese.png"
+                  alt="pizza_chease"
+                  class="menu_pizza_image"
+                />
+                <strong class="menu_pizza_name">Chease</strong>
+                <p class="menu_pizza_desc">
+                  Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                  meat...
+                </p>
+                <ul class="menu_pizza_size">
+                  <li>
+                    <button class="menu_pizza_size_button button">22</button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button active">
+                      28
+                    </button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button">33</button>
+                  </li>
+                </ul>
+                <button class="menu_pizza_ingradients_button button">
+                  + Ingradients
+                </button>
+                <p class="menu_pizza_price">8,35 $</p>
+                <button class="menu_pizza_order_button button">
+                  Order Now
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div class="menu_popular_poster">
+            <h3 class="menu_popular_poster_title">MOST POPULAR PIZZA</h3>
+          </div>
+          <ul class="menu_pizza">
+            <li class="menu_pizza_item">
+              <div class="menu_pizza_card">
+                <img
+                  src="./img/argentina.png"
+                  alt="pizza_argentina"
+                  class="menu_pizza_image"
+                />
+                <strong class="menu_pizza_name">Argentina</strong>
+                <p class="menu_pizza_desc">
+                  Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                  meat...
+                </p>
+                <ul class="menu_pizza_size">
+                  <li>
+                    <button class="menu_pizza_size_button button">22</button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button active">
+                      28
+                    </button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button">33</button>
+                  </li>
+                </ul>
+                <button class="menu_pizza_ingradients_button button">
+                  + Ingradients
+                </button>
+                <p class="menu_pizza_price">7,35 $</p>
+                <button class="menu_pizza_order_button button">
+                  Order Now
+                </button>
+              </div>
+            </li>
+            <li class="menu_pizza_item">
+              <div class="menu_pizza_card">
+                <img
+                  src="./img/mushroom.png"
+                  alt="pizza_mushroom"
+                  class="menu_pizza_image"
+                />
+                <strong class="menu_pizza_name">Mushroom</strong>
+                <p class="menu_pizza_desc">
+                  Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                  meat...
+                </p>
+                <ul class="menu_pizza_size">
+                  <li>
+                    <button class="menu_pizza_size_button button">22</button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button active">
+                      28
+                    </button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button">33</button>
+                  </li>
+                </ul>
+                <button class="menu_pizza_ingradients_button button">
+                  + Ingradients
+                </button>
+                <p class="menu_pizza_price">6,35 $</p>
+                <button class="menu_pizza_order_button button">
+                  Order Now
+                </button>
+              </div>
+            </li>
+            <li class="menu_pizza_item">
+              <div class="menu_pizza_card">
+                <img
+                  src="./img/tomato.png"
+                  alt="pizza_tomato"
+                  class="menu_pizza_image"
+                />
+                <strong class="menu_pizza_name">Tomato</strong>
+                <p class="menu_pizza_desc">
+                  Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                  meat...
+                </p>
+                <ul class="menu_pizza_size">
+                  <li>
+                    <button class="menu_pizza_size_button button">22</button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button active">
+                      28
+                    </button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button">33</button>
+                  </li>
+                </ul>
+                <button class="menu_pizza_ingradients_button button">
+                  + Ingradients
+                </button>
+                <p class="menu_pizza_price">7,35 $</p>
+                <button class="menu_pizza_order_button button">
+                  Order Now
+                </button>
+              </div>
+            </li>
+            <li class="menu_pizza_item">
+              <div class="menu_pizza_card">
+                <img
+                  src="./img/italian_x2.png"
+                  alt="pizza_atalian x2"
+                  class="menu_pizza_image"
+                />
+                <strong class="menu_pizza_name">italian x2</strong>
+                <p class="menu_pizza_desc">
+                  Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                  meat...
+                </p>
+                <ul class="menu_pizza_size">
+                  <li>
+                    <button class="menu_pizza_size_button button">22</button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button active">
+                      28
+                    </button>
+                  </li>
+                  <li>
+                    <button class="menu_pizza_size_button button">33</button>
+                  </li>
+                </ul>
+                <button class="menu_pizza_ingradients_button button">
+                  + Ingradients
+                </button>
+                <p class="menu_pizza_price">8,35 $</p>
+                <button class="menu_pizza_order_button button">
+                  Order Now
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="events">
+        <div class="container events_flex">
+          <div class="events_poster how_we_coocking_poster">
+              <strong>HOW WE COOKING</strong
+              ><button class="events_more_button button">More</button>
+          </div>
+          <div class="events_poster our_blog_poster">
+              <strong class="events_poster_title">OUR BLOG</strong
+              ><button class="events_more_button button">More</button>
+          </div>
+          <div class="events_article">
+            <h2 class="events_article_title">Events</h2>
+              <p class="events_article_text">
+                  There are regular events in our pizzeria that will allow you
+                  to eat delicious food for a lower price!
+              </p>
+            </h2>
+          </div>
+          <div class="events_poster two_pizza_poster">
+              <strong class="events_poster_title">TWO PIZZA FOR 1 PRICE</strong
+              ><button class="events_more_button button">More</button>
+              <img src="./img/egg.png" alt="egg_image" class="events_poster_egg">
+          </div>
+          <div class="events_poster kitchen_tour_poster">
+              <strong class="events_poster_title">KITCHEN TOUR</strong
+              ><button class="events_more_button button">More</button>
+              <img src="./img/buritto.png" alt="buritto_image" class="events_poster_buritto">
+          </div>
+          <div class="events_poster free_coffee_poster">
+              <strong class="events_poster_title">FREE COFFEE FOR 3 PIZZA</strong
+              ><button class="events_more_button button">More</button>
+              <img src="./img/cofee.png" alt="coffee_image" class="events_poster_coffe">
+          </div>
+          <div class="events_poster our_instgram_poster">
+              <strong class="events_poster_title">OUR INSTAGRAM</strong
+              ><button class="events_more_button button">More</button>
+          </div>
+          <div class="events_poster where_poster">
+              <strong class="events_poster_title">WHERE ARE YOU CHOOSE US?</strong
+              ><button class="events_more_button button">More</button>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container about_flex">
+          <div class="about_article">
+            <h2 class="about_article_title">About us</h2>
+            <p class="about_article_text">In just a couple of years, we have opened 6 outlets in different cities: Kyiv, Dnipro, Kharkiv, Odesa, Lviv, and in the future we plan to develop the network in other major cities of Ukraine.</p>
+            <img src="./img/about_us.png" alt="pizzas_image">
+            <p class="about_article_text">The kitchen of each point is at least: 400-500 sq. m. meters, hundreds of employees, smoothly performing work in order to receive / prepare / form / deliver customer orders on time.</p>
+            <svg
+                width="88"
+                height="54"
+                class="about_arrow"
+              >
+                <use href="./ico/sprite.svg#icon-arrow_long"></use>
+              </svg>
+          </div>
+          <div class="about_poster">
+            <img src="./img/about_us_big_pizza.png" alt="pizza_poster">
+            <img src="./img/pizza.png" alt="pizza_png" class="about_poster_pizza">
+            <img src="./img/fries.png" alt="fries_png" class="about_poster_fries">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer_links">
+          <li class="footer_links_logo"><a href="#"><svg width="142" height="34" class="header__icon"><use href="./ico/sprite.svg#icon-logo"></use></svg></a></li>
+          <li>
+            <ul class="footer_links_list">
+              <li class="footer_links_item"><a href="#" class="footer_links_link_main">Home</a></li>
+              <li class="footer_links_item"><a href="#" class="footer_links_link">To Order</a></li>
+              <li class="footer_links_item"><a href="#" class="footer_links_link">About us</a></li>
+              <li class="footer_links_item"><a href="#" class="footer_links_link">Events</a></li>
+              <li class="footer_links_item"><a href="#" class="footer_links_link">Menu</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="footer_links_list">
+              <li class="footer_links_item"><a href="#" class="footer_links_link_main">Events</a></li>
+              <li class="footer_links_item"><a href="#" class="footer_links_link">3 Pizza 1 Free Coffee</a></li>
+              <li class="footer_links_item"><a href="#" class="footer_links_link">2 Pizza for 1 Price</a></li>
+              <li class="footer_links_item"><a href="#" class="footer_links_link">Kitchen Tour</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="footer_links_list">
+              <li class="footer_links_item"><a href="#" class="footer_links_link_main">Menu</a></li>
+              <li class="footer_links_item"><a href="#" class="footer_links_link">Show All</a></li>
+              <li class="footer_links_item"><a href="#" class="footer_links_link">Seaproducts</a></li>
+              <li class="footer_links_item"><a href="#" class="footer_links_link">Vegan</a></li>
+              <li class="footer_links_item"><a href="#" class="footer_links_link">Meat</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="footer_links_list">
+              <li><a href="#" class="footer_links_link_main">About Us</a></li>
+              <li><a href="#" class="footer_links_link">Our History</a></li>
+              <li><a href="#" class="footer_links_link">Why We?</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer_contacts">
+          <address><a href="tel:+7 (937) 333-55-33" class="footer_phone">+7 (937) 333-55-33</a></address>
+          <ul class="footer_contacts_social">
+            <li><a href="#"><svg width="30" height="30" class="footer_icon"><use href="./ico/sprite.svg#icon-instagram"></use></svg></a></li>
+            <li><a href="#"><svg width="30" height="30" class="footer_icon"><use href="./ico/sprite.svg#icon-twitter"></use></svg></a></li>
+            <li><a href="#"><svg width="30" height="30" class="footer_icon"><use href="./ico/sprite.svg#icon-facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- Розібратися з бекграундами -->
+<!-- Адаптація -->
+<!-- Мобільне меню -->
+<!-- Анімація -->
+<!-- Картки піцц та івентів в окремий файл -->
+<!-- Відео замість пнг -->
+<!-- Адаптація графіки -->
+<!-- Налаштування посилань -->
+<!-- Загуглити градієнт -->
+<!-- Sass синтаксис -->
