@@ -1,41 +1,61 @@
-.events_flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    gap: 24px;
-}
+.events {
+    &_flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        gap: 24px;
+    }
 
-.events_poster {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    gap: 48px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.1;
-    padding: 0 26px;
-    height: 260px;
-}
+    &_poster {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 48px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.1;
+        padding: 0 26px;
+        height: 260px;
 
-.events_article {
-    width: 340px;
-    height: 200px;
-    padding: 16px;
-}
+        &_egg {
+            position: absolute;
+            left: -120px;
+            top: -140px;
+        }
 
-.events_article_title {
-    font-size: 68px;
-    font-weight: 800;
-    line-height: 1.1;
-    text-align: right;
-    margin-bottom: 6px;
-}
+        &_buritto {
+            position: absolute;
+            right: -120px;
+        }
 
-.events_article_text {
-    color: #A3A3A3;
-    font-size: 20px;
-    text-align: right;
+        &_coffe {
+            position: absolute;
+            bottom: -90px;
+            left: -120px;
+        }
+
+    }
+
+    &_article {
+        width: 340px;
+        height: 200px;
+        padding: 16px;
+
+        &_title {
+            font-size: 68px;
+            font-weight: 800;
+            line-height: 1.1;
+            text-align: right;
+            margin-bottom: 6px;
+        }
+
+        &_text {
+            color: #A3A3A3;
+            font-size: 20px;
+            text-align: right;
+        }
+    }
 }
 
 .how_we_coocking_poster {
@@ -79,20 +99,4 @@
     border-radius: 30px;
 }
 
-.events_poster_egg {
-    position: absolute;
-    left: -120px;
-    top: -140px;
-}
-
-.events_poster_buritto {
-    position: absolute;
-    right: -120px;
-}
-
-.events_poster_coffe {
-    position: absolute;
-    bottom: -90px;
-    left: -120px;
-}
 

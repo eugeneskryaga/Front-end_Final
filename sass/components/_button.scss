@@ -5,7 +5,7 @@
     border-radius: 30px;
     padding: 4px 0;
     cursor: pointer;
-    transition: background-color 250ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
 }
 
 .header_ico_list_button {
@@ -35,7 +35,7 @@
     color: #A3A3A3;
     border: 2px solid #A3A3A3;
     background-color: rgb(33, 10, 1);
-    transition: color 250ms ease-in-out, border-color 250ms ease-in-out;
+    transition: color 500ms ease-in-out, border-color 500ms ease-in-out;
 }
 
 .menu_pizza_ingradients_button {
@@ -44,7 +44,7 @@
     border: 2px solid #FF6432;
     color: #FF6432;
     background-color: rgb(33, 10, 1);
-    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
 }
 
 .menu_pizza_order_button {
@@ -59,10 +59,3 @@
     font-weight: 500;
     line-height: 1.1;
 }
-
-// .active {
-//     border: none;
-//     color: white;
-//     background-color: #FF6432;
-// }
-
