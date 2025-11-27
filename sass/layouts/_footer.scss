@@ -28,6 +28,7 @@
 .footer_links_link {
     text-decoration: none;
     color: #515151;
+    transition: color 250ms ease-in-out;
 }
 
 .footer_links_link_main {
@@ -35,6 +36,7 @@
     color: #A3A3A3;
     font-size: 20px;
     line-height: 1.26;
+    transition: color 250ms ease-in-out;
 }
 
 .footer_contacts {
@@ -53,4 +55,5 @@
     text-decoration: none;
     font-size: 22px;
     line-height: 1.26;
+    transition: opacity 250ms ease-in-out;
 }

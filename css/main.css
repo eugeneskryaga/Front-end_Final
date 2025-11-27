@@ -26,19 +26,16 @@ body {
 
 .header__icon {
   fill: #FF6432;
+  transition: opacity 250ms ease-in-out;
 }
 
 .hero_title_lightning {
   fill: #FFA228;
 }
 
-.hero_article_play {
-  stroke: black;
-  fill: #FFA228;
-}
-
 .footer_icon {
   fill: #FFA228;
+  transition: opacity 250ms ease-in-out;
 }
 
 .button {
@@ -48,6 +45,7 @@ body {
   border-radius: 30px;
   padding: 4px 0;
   cursor: pointer;
+  transition: background-color 250ms ease-in-out;
 }
 
 .header_ico_list_button {
@@ -77,6 +75,7 @@ body {
   color: #A3A3A3;
   border: 2px solid #A3A3A3;
   background-color: rgb(33, 10, 1);
+  transition: color 250ms ease-in-out, border-color 250ms ease-in-out;
 }
 
 .menu_pizza_ingradients_button {
@@ -85,6 +84,7 @@ body {
   border: 2px solid #FF6432;
   color: #FF6432;
   background-color: rgb(33, 10, 1);
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
 }
 
 .menu_pizza_order_button {
@@ -98,12 +98,6 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.1;
-}
-
-.active {
-  border: none;
-  color: white;
-  background-color: #FF6432;
 }
 
 .header_flex {
@@ -475,6 +469,7 @@ iframe {
 .footer_links_link {
   text-decoration: none;
   color: #515151;
+  transition: color 250ms ease-in-out;
 }
 
 .footer_links_link_main {
@@ -482,6 +477,7 @@ iframe {
   color: #A3A3A3;
   font-size: 20px;
   line-height: 1.26;
+  transition: color 250ms ease-in-out;
 }
 
 .footer_contacts {
@@ -500,9 +496,32 @@ iframe {
   text-decoration: none;
   font-size: 22px;
   line-height: 1.26;
+  transition: opacity 250ms ease-in-out;
 }
 
-.header_navlist_item__link:focus {
+.header_navlist_item__link:hover, .header_navlist_item__link:focus {
   color: #FFA228;
-  text-decoration: overline;
+}
+
+.button:hover, .button:focus {
+  background-color: #FFA228;
+}
+
+.menu_pizza_ingradients_button:hover, .menu_pizza_ingradients_button:focus {
+  background-color: rgb(33, 10, 1);
+  border-color: #FFA228;
+  color: #FFA228;
+}
+
+.menu_pizza_size_button:hover, .menu_pizza_size_button:focus {
+  border-color: #FFA228;
+  color: white;
+}
+
+.footer_icon:hover, .footer_phone:hover, .header__icon:hover, .footer_icon:focus, .footer_phone:focus, .header__icon:focus {
+  opacity: 70%;
+}
+
+.footer_links_link_main:hover, .footer_links_link_main:focus, .footer_links_link:hover, .footer_links_link:focus {
+  color: #FFA228;
 }/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,26 @@
-.header_navlist_item__link:focus {
+.header_navlist_item__link:hover, .header_navlist_item__link:focus {
     color: #FFA228;
-    text-decoration: overline;
+}
+
+.button:hover, .button:focus {
+    background-color: #FFA228;
+}
+
+.menu_pizza_ingradients_button:hover, .menu_pizza_ingradients_button:focus {
+    background-color: rgb(33, 10, 1);
+    border-color: #FFA228;
+    color: #FFA228;
+}
+
+.menu_pizza_size_button:hover, .menu_pizza_size_button:focus {
+    border-color: #FFA228;
+    color: white;
+}
+
+.footer_icon:hover, .footer_phone:hover, .header__icon:hover, .footer_icon:focus, .footer_phone:focus, .header__icon:focus {
+    opacity: 70%;
+}
+
+.footer_links_link_main:hover, .footer_links_link_main:focus, .footer_links_link:hover, .footer_links_link:focus {
+    color: #FFA228;
 }

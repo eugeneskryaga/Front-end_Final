@@ -1,16 +1,14 @@
 .header__icon {
     fill: #FF6432;
+    transition: opacity 250ms ease-in-out;
 }
 
 .hero_title_lightning {
     fill: #FFA228;
 }
 
-.hero_article_play {
-    stroke: black;
-    fill: #FFA228;
-}
-
 .footer_icon {
     fill: #FFA228;
+    transition: opacity 250ms ease-in-out;
 }
+
