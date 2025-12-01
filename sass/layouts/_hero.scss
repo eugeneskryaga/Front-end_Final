@@ -82,3 +82,131 @@ iframe {
         top: -30px;
     }
 }
+
+
+@media (max-width: 767px) {
+    .hero {
+        &_flex {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &_article {
+            order: 2;
+
+            &_video {
+                margin-bottom: 0;
+            }
+        }
+
+        &_poster {
+            align-self: center;
+
+            &_img {
+                width: 240px;
+                height: 364px;
+            }
+
+            &_fries {
+                width: 110px;
+                height: 118px;
+                bottom: -30px;
+                left: -40px;
+            }
+
+            &_pizza {
+                width: 130px;
+                height: 130px;
+                top: -40px;
+                right: -40px;
+            }
+
+        }
+
+        &_title {
+            &_text {
+                font-size: 48px;
+
+                &_spacing {
+                    word-spacing: 30px;
+                }
+            }
+
+            &_arrow {
+                display: none;
+            }
+
+            &_lightning {
+                width: 34px;
+                height: 60px;
+                left: 134px;
+            }
+        }
+    }
+
+    .order_arrow {
+        display: none;
+    }
+
+    .to_order_button{
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1254px) {
+    .hero {
+        &_title{
+            &_text{
+                font-size: 56px;
+            }
+
+            &_arrow {
+                right: 20px;
+            }
+
+            &_lightning {
+                width: 60px;
+                height: 80px;
+                bottom: 44px;
+                left: 160px;
+            }
+        }
+
+        &_poster {
+            &_img {
+                width: 244px;
+                height: 364px;
+            }
+
+            &_pizza {
+                width: 130px;
+                height: 130px;
+                top: -40px;
+                right: -40px;
+            }
+
+            &_fries {
+                width: 110px;
+                height: 120px;
+                top: 40%;
+                left: -40px;
+            }
+        }
+
+        &_article {
+            &_video {
+                margin-bottom: 20px;
+            }
+        }
+
+
+    }
+
+    .order_arrow_icon {
+        width: 140px;
+        height: 80px;
+        top: -40px;
+    }
+
+    
+}

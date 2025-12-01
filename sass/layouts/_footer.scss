@@ -57,3 +57,46 @@
         transition: opacity 250ms ease-in-out;
     }
 }
+
+
+@media (max-width: 767px) {
+    .footer {
+        &_links {
+            flex-wrap: wrap;
+            gap: 50px;
+
+            &_logo {
+                width: 100%;
+            }
+
+            &_list {
+                margin: 0;
+            }
+        }
+
+        &_contacts {
+            padding-top: 40px;
+        }
+
+        &_phone {
+            font-size: 14px;
+        }
+
+        &_icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width: 1254px) {
+    .footer {
+        &_links {
+            gap: 30px;
+            margin-bottom: 40px;
+            &_list{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

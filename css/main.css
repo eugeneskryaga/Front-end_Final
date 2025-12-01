@@ -100,6 +100,28 @@ body {
   line-height: 1.1;
 }
 
+@media (max-width: 767px) {
+  .menu_filer_button {
+    width: 110px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .menu_pizza_order_button {
+    width: 118px;
+    height: 28px;
+    font-size: 10px;
+  }
+  .menu_pizza_ingradients_button {
+    width: 118px;
+    height: 28px;
+    font-size: 10px;
+  }
+  .menu_pizza_size_button {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+}
 .header_flex {
   display: flex;
   justify-content: space-between;
@@ -125,6 +147,32 @@ body {
   gap: 30px;
 }
 
+@media (max-width: 767px) {
+  .container {
+    width: 380px;
+    padding: 0 10px;
+  }
+  .header_navlist {
+    display: none;
+  }
+  .header_flex {
+    gap: 60px;
+  }
+  .header_ico_list {
+    gap: 0;
+  }
+  .header_ico_list_button {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1254px) {
+  .container {
+    width: 768px;
+  }
+  .header_navlist {
+    gap: 20px;
+  }
+}
 .hero_flex {
   display: flex;
   justify-content: space-between;
@@ -195,6 +243,95 @@ iframe {
   top: -30px;
 }
 
+@media (max-width: 767px) {
+  .hero_flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero_article {
+    order: 2;
+  }
+  .hero_article_video {
+    margin-bottom: 0;
+  }
+  .hero_poster {
+    align-self: center;
+  }
+  .hero_poster_img {
+    width: 240px;
+    height: 364px;
+  }
+  .hero_poster_fries {
+    width: 110px;
+    height: 118px;
+    bottom: -30px;
+    left: -40px;
+  }
+  .hero_poster_pizza {
+    width: 130px;
+    height: 130px;
+    top: -40px;
+    right: -40px;
+  }
+  .hero_title_text {
+    font-size: 48px;
+  }
+  .hero_title_text_spacing {
+    word-spacing: 30px;
+  }
+  .hero_title_arrow {
+    display: none;
+  }
+  .hero_title_lightning {
+    width: 34px;
+    height: 60px;
+    left: 134px;
+  }
+  .order_arrow {
+    display: none;
+  }
+  .to_order_button {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1254px) {
+  .hero_title_text {
+    font-size: 56px;
+  }
+  .hero_title_arrow {
+    right: 20px;
+  }
+  .hero_title_lightning {
+    width: 60px;
+    height: 80px;
+    bottom: 44px;
+    left: 160px;
+  }
+  .hero_poster_img {
+    width: 244px;
+    height: 364px;
+  }
+  .hero_poster_pizza {
+    width: 130px;
+    height: 130px;
+    top: -40px;
+    right: -40px;
+  }
+  .hero_poster_fries {
+    width: 110px;
+    height: 120px;
+    top: 40%;
+    left: -40px;
+  }
+  .hero_article_video {
+    margin-bottom: 20px;
+  }
+  .order_arrow_icon {
+    width: 140px;
+    height: 80px;
+    top: -40px;
+  }
+}
 .menu {
   padding: 36px 0;
 }
@@ -267,6 +404,60 @@ iframe {
   line-height: 1.1;
 }
 
+@media (max-width: 767px) {
+  .menu_flex {
+    gap: 70px;
+  }
+  .menu_filter {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .menu_title {
+    font-size: 48px;
+  }
+  .menu_popular_poster {
+    width: 360px;
+    height: 160px;
+    background-size: cover;
+  }
+  .menu_popular_poster_title {
+    font-size: 26px;
+  }
+  .menu_pizza {
+    flex-wrap: wrap;
+  }
+  .menu_pizza_card {
+    width: 160px;
+    height: 280px;
+    padding: 40px 10px 10px 10px;
+    gap: 10px;
+  }
+  .menu_pizza_image {
+    width: 96px;
+    height: 96px;
+    top: -50px;
+  }
+  .menu_pizza_desc {
+    font-size: 10px;
+  }
+  .menu_pizza_name {
+    font-size: 16px;
+  }
+  .menu_pizza_price {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1254px) {
+  .menu_filter {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .menu_pizza {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px;
+  }
+}
 .events_flex {
   display: flex;
   flex-wrap: wrap;
@@ -358,6 +549,55 @@ iframe {
   border-radius: 30px;
 }
 
+@media (max-width: 767px) {
+  .events_flex {
+    gap: 10px;
+    justify-content: center;
+  }
+  .events_article {
+    order: -1;
+  }
+  .events_article_title {
+    font-size: 48px;
+  }
+  .events_article_text {
+    font-size: 16px;
+  }
+  .events_poster {
+    width: 340px;
+    border-radius: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1254px) {
+  .events_flex {
+    justify-content: space-around;
+  }
+  .events_article {
+    width: 300px;
+  }
+  .events_poster {
+    width: 300px;
+    border-radius: 40px;
+  }
+  .events_poster_egg {
+    top: -80px;
+    left: -100px;
+    width: 200px;
+    height: 230px;
+  }
+  .events_poster_buritto {
+    width: 200px;
+    height: 250px;
+    left: -120px;
+    bottom: -150px;
+  }
+  .events_poster_coffe {
+    width: 200px;
+    height: 200px;
+    left: 220px;
+    top: -80px;
+  }
+}
 .about_flex {
   display: flex;
   padding: 124px 40px;
@@ -397,6 +637,53 @@ iframe {
   left: -80px;
 }
 
+@media (max-width: 767px) {
+  .about_flex {
+    flex-direction: column;
+    padding: 40px 10px;
+  }
+  .about_poster {
+    order: -1;
+  }
+  .about_poster_img {
+    width: 300px;
+    height: 320px;
+  }
+  .about_poster_fries {
+    width: 100px;
+    height: 108px;
+    left: -20px;
+    bottom: 10px;
+  }
+  .about_poster_pizza {
+    width: 118px;
+    width: 118px;
+    right: 30px;
+    top: -30px;
+  }
+  .about_article_title {
+    font-size: 48px;
+  }
+  .about_article_text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .about_arrow {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1254px) {
+  .about_flex {
+    flex-direction: column;
+    padding: 60px 40px;
+  }
+  .about_poster {
+    order: -1;
+  }
+  .about_arrow {
+    display: none;
+  }
+}
 .footer {
   background-color: #170A00;
   padding: 64px 0;
@@ -448,6 +735,37 @@ iframe {
   transition: opacity 250ms ease-in-out;
 }
 
+@media (max-width: 767px) {
+  .footer_links {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .footer_links_logo {
+    width: 100%;
+  }
+  .footer_links_list {
+    margin: 0;
+  }
+  .footer_contacts {
+    padding-top: 40px;
+  }
+  .footer_phone {
+    font-size: 14px;
+  }
+  .footer_icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1254px) {
+  .footer_links {
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  .footer_links_list {
+    margin-bottom: 0;
+  }
+}
 .header_navlist_item__link:hover, .header_navlist_item__link:focus {
   color: #FFA228;
 }

@@ -59,3 +59,30 @@
     font-weight: 500;
     line-height: 1.1;
 }
+
+
+@media (max-width: 767px) {
+    .menu_filer_button {
+        width: 110px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .menu_pizza_order_button {
+        width: 118px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .menu_pizza_ingradients_button {
+        width: 118px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .menu_pizza_size_button {
+        width: 24px;
+        height: 24px;
+        font-size: 10px;
+    }
+}

@@ -81,3 +81,76 @@
         }
     }
 }
+
+
+@media (max-width: 767px) {
+    .menu {
+        &_flex {
+            gap: 70px;
+        }
+
+        &_filter {
+            flex-wrap: wrap;
+            gap: 10px
+        
+        }
+
+        &_title {
+            font-size: 48px;
+        }
+
+        &_popular_poster {
+            width: 360px;
+            height: 160px;
+            background-size: cover;
+
+            &_title {
+                font-size: 26px;
+            }
+        }
+
+        &_pizza {
+            flex-wrap: wrap;
+
+            &_card {
+                width: 160px;
+                height: 280px;
+                padding: 40px 10px 10px 10px;
+                gap: 10px;
+            }
+
+            &_image {
+                width: 96px;
+                height: 96px;
+                top: -50px
+            }
+
+            &_desc {
+                font-size: 10px;
+            }
+
+            &_name {
+                font-size: 16px;
+            }
+
+            &_price {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width: 1254px) {
+    .menu{
+        &_filter{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &_pizza {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 60px;
+        }
+    }
+}
