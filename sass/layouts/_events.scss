@@ -127,23 +127,15 @@
             border-radius: 40px;
             
             &_egg {
-                width: 200px;
-                height: 230px;
-                left: -80px;
-                top: -110px
+                display: none;
             }
 
             &_buritto {
-                width: 200px;
-                height: 230px;
-                right: -90px;
+                display: none;
             }
 
             &_coffe {
-                width: 200px;
-                height: 230px;
-                left: -80px;
-                bottom: -80px;
+                display: none;
             }
         }
     }

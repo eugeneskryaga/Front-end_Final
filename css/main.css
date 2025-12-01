@@ -16,6 +16,7 @@ body {
   background-color: rgb(30, 7, 1);
   font-family: "Mulish", sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 body.modal-open {
@@ -200,7 +201,7 @@ body.modal-open {
 
 @media (max-width: 767px) {
   .container {
-    width: 380px;
+    width: 370px;
     padding: 0 10px;
   }
   .header_navlist {
@@ -339,7 +340,8 @@ iframe {
   .hero_title_lightning {
     width: 34px;
     height: 60px;
-    left: 134px;
+    top: 50px;
+    left: 140px;
   }
   .order_arrow {
     display: none;
@@ -465,6 +467,7 @@ iframe {
   .menu_filter {
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
   }
   .menu_title {
     font-size: 48px;
@@ -625,21 +628,13 @@ iframe {
     border-radius: 40px;
   }
   .events_poster_egg {
-    width: 200px;
-    height: 230px;
-    left: -80px;
-    top: -110px;
+    display: none;
   }
   .events_poster_buritto {
-    width: 200px;
-    height: 230px;
-    right: -90px;
+    display: none;
   }
   .events_poster_coffe {
-    width: 200px;
-    height: 230px;
-    left: -80px;
-    bottom: -80px;
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1254px) {
