@@ -236,17 +236,17 @@ body.modal-open {
   position: relative;
 }
 .hero_title_text_spacing {
-  word-spacing: 80px;
+  word-spacing: 40px;
 }
 .hero_title_arrow {
   position: absolute;
-  right: 40px;
+  right: 30px;
   top: 20px;
 }
 .hero_title_lightning {
   position: absolute;
-  left: 84px;
-  bottom: -10px;
+  right: 53%;
+  bottom: 0;
 }
 .hero_title_text {
   font-weight: 800;

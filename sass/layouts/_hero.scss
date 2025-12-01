@@ -8,19 +8,19 @@
         position: relative;
         
         &_text_spacing {
-            word-spacing: 80px;
+            word-spacing: 40px;
         }
 
         &_arrow {
             position: absolute;
-            right: 40px;
+            right: 30px;
             top: 20px;
         }
 
         &_lightning {
             position: absolute;
-            left: 84px;
-            bottom: -10px;
+            right: 53%;
+            bottom: 0;
         }
 
         &_text {
