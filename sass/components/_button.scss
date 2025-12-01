@@ -6,11 +6,21 @@
     padding: 4px 0;
     cursor: pointer;
     transition: scale 500ms ease-in-out;
+
+}
+
+.button.close {
+    width: 124px;
 }
 
 .header_ico_list_button {
-    width: 164px;
+    width: 124px;
     height: 40px;
+}
+
+.burger_button {
+    background-color: rgb(30, 7, 1);
+    border: none;
 }
 
 .to_order_button {

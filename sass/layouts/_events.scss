@@ -125,6 +125,26 @@
         &_poster {
             width: 340px;
             border-radius: 40px;
+            
+            &_egg {
+                width: 200px;
+                height: 230px;
+                left: -80px;
+                top: -110px
+            }
+
+            &_buritto {
+                width: 200px;
+                height: 230px;
+                right: -90px;
+            }
+
+            &_coffe {
+                width: 200px;
+                height: 230px;
+                left: -80px;
+                bottom: -80px;
+            }
         }
     }
     

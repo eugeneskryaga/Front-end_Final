@@ -1,4 +1,4 @@
-.header_navlist_item__link:hover, .header_navlist_item__link:focus {
+.header_navlist_item__link:hover, .header_navlist_item__link:focus, .mobile-menu_list_item__link:hover, .mobile-menu_list_item__link:focus  {
     color: #FFA228;
 }
 
@@ -12,7 +12,7 @@
     border: none;
 }
 
-.footer_icon:hover, .footer_phone:hover, .header__icon:hover, .footer_icon:focus, .footer_phone:focus, .header__icon:focus {
+.footer_icon:hover, .footer_phone:hover, .header__icon:hover, .footer_icon:focus, .footer_phone:focus, .header__icon:focus, .mobile-menu_phone:hover, .mobile-menu_phone:focus {
     opacity: 70%;
 }
 

@@ -18,6 +18,10 @@ body {
   color: white;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
   width: 1254px;
   padding: 0 40px;
@@ -27,6 +31,9 @@ body {
 .header__icon {
   fill: #FF6432;
   transition: opacity 250ms ease-in-out;
+}
+.header__icon_burger {
+  stroke: #FF6432;
 }
 
 .hero_title_lightning {
@@ -48,9 +55,18 @@ body {
   transition: scale 500ms ease-in-out;
 }
 
+.button.close {
+  width: 124px;
+}
+
 .header_ico_list_button {
-  width: 164px;
+  width: 124px;
   height: 40px;
+}
+
+.burger_button {
+  background-color: rgb(30, 7, 1);
+  border: none;
 }
 
 .to_order_button {
@@ -147,6 +163,41 @@ body {
   gap: 30px;
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  right: -100%;
+  background-color: rgb(33, 10, 1);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: right 250ms ease-in-out;
+  font-size: 20px;
+  padding: 10px;
+}
+.mobile-menu_list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.mobile-menu_list_item__link {
+  color: #A3A3A3;
+  text-decoration: none;
+  transition: color 250ms ease-in-out;
+}
+.mobile-menu_phone {
+  color: #FFA32B;
+  text-decoration: none;
+  transition: opacity 250ms ease-in-out;
+}
+
+.mobile-menu.is-open {
+  right: 0;
+}
+
 @media (max-width: 767px) {
   .container {
     width: 380px;
@@ -159,7 +210,7 @@ body {
     gap: 60px;
   }
   .header_ico_list {
-    gap: 0;
+    gap: 10px;
   }
   .header_ico_list_button {
     display: none;
@@ -169,8 +220,11 @@ body {
   .container {
     width: 768px;
   }
+  .header {
+    gap: 10px;
+  }
   .header_navlist {
-    gap: 20px;
+    gap: 10px;
   }
 }
 .hero_flex {
@@ -443,6 +497,9 @@ iframe {
   .menu_pizza_name {
     font-size: 16px;
   }
+  .menu_pizza_size {
+    gap: 20px;
+  }
   .menu_pizza_price {
     font-size: 16px;
   }
@@ -566,6 +623,23 @@ iframe {
   .events_poster {
     width: 340px;
     border-radius: 40px;
+  }
+  .events_poster_egg {
+    width: 200px;
+    height: 230px;
+    left: -80px;
+    top: -110px;
+  }
+  .events_poster_buritto {
+    width: 200px;
+    height: 230px;
+    right: -90px;
+  }
+  .events_poster_coffe {
+    width: 200px;
+    height: 230px;
+    left: -80px;
+    bottom: -80px;
   }
 }
 @media (min-width: 768px) and (max-width: 1254px) {
@@ -766,7 +840,7 @@ iframe {
     margin-bottom: 0;
   }
 }
-.header_navlist_item__link:hover, .header_navlist_item__link:focus {
+.header_navlist_item__link:hover, .header_navlist_item__link:focus, .mobile-menu_list_item__link:hover, .mobile-menu_list_item__link:focus {
   color: #FFA228;
 }
 
@@ -780,7 +854,7 @@ iframe {
   border: none;
 }
 
-.footer_icon:hover, .footer_phone:hover, .header__icon:hover, .footer_icon:focus, .footer_phone:focus, .header__icon:focus {
+.footer_icon:hover, .footer_phone:hover, .header__icon:hover, .footer_icon:focus, .footer_phone:focus, .header__icon:focus, .mobile-menu_phone:hover, .mobile-menu_phone:focus {
   opacity: 70%;
 }
 

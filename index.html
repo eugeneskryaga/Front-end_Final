@@ -94,7 +94,80 @@
                 <use href="./ico/sprite.svg#icon-cart"></use></svg
             ></a>
           </li>
+          <li>
+            <button
+              class="burger_button"
+              data-menu-open
+            >
+              <svg
+                width="30"
+                height="30"
+                class="header__icon_burger"
+              >
+                <use href="./ico/sprite.svg#icon-burger_menu"></use>
+              </svg>
+            </button>
+          </li>
         </ul>
+      </div>
+      <div
+        class="mobile-menu"
+        data-menu
+      >
+        <a
+          href="#logo_link"
+          class="header_logo"
+          ><svg
+            width="132"
+            height="36"
+            class="header__icon"
+            id="logo_link"
+          >
+            <use href="./ico/sprite.svg#icon-logo"></use></svg
+        ></a>
+        <ul class="mobile-menu_list">
+          <li class="mobile-menu_list_item">
+            <a
+              href="#logo_link"
+              class="mobile-menu_list_item__link"
+              >Home</a
+            >
+          </li>
+          <li class="mobile-menu_list_item">
+            <a
+              href="#menu_link"
+              class="mobile-menu_list_item__link"
+              >Menu</a
+            >
+          </li>
+          <li class="mobile-menu_list_item">
+            <a
+              href="#events_link"
+              class="mobile-menu_list_item__link"
+              >Events</a
+            >
+          </li>
+          <li class="mobile-menu_list_item">
+            <a
+              href="#about_link"
+              class="mobile-menu_list_item__link"
+              >About us</a
+            >
+          </li>
+          <li>
+            <button
+              class="button close"
+              data-menu-close
+            >
+              Close menu
+            </button>
+          </li>
+        </ul>
+        <a
+          href="tel:+7 (937) 333-55-33"
+          class="mobile-menu_phone"
+          >+7 (937) 333-55-33</a
+        >
       </div>
     </header>
     <main>
@@ -867,6 +940,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
 

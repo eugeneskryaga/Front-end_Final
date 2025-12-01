@@ -1,6 +1,9 @@
 .header__icon {
     fill: #FF6432;
     transition: opacity 250ms ease-in-out;
+    &_burger {
+        stroke: #FF6432;
+    }
 }
 
 .hero_title_lightning {
