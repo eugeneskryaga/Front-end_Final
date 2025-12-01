@@ -355,12 +355,12 @@ iframe {
     font-size: 56px;
   }
   .hero_title_arrow {
-    right: 20px;
+    right: 10px;
   }
   .hero_title_lightning {
-    width: 60px;
-    height: 80px;
-    bottom: 44px;
+    width: 40px;
+    height: 60px;
+    bottom: 0;
     left: 160px;
   }
   .hero_poster_img {
@@ -386,6 +386,7 @@ iframe {
     width: 140px;
     height: 80px;
     top: -40px;
+    right: 80px;
   }
 }
 .menu {
