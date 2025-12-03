@@ -139,6 +139,11 @@ body.modal-open {
     font-size: 10px;
   }
 }
+@media (min-width: 768px) {
+  .burger_button {
+    display: none;
+  }
+}
 .header_flex {
   display: flex;
   justify-content: space-between;
@@ -177,7 +182,7 @@ body.modal-open {
   justify-content: space-around;
   transition: right 250ms ease-in-out;
   font-size: 20px;
-  padding: 10px;
+  padding: 30px;
 }
 .mobile-menu_list {
   display: flex;
@@ -225,7 +230,7 @@ body.modal-open {
     gap: 10px;
   }
   .header_navlist {
-    gap: 10px;
+    gap: 20px;
   }
 }
 .hero_flex {
@@ -287,6 +292,7 @@ body.modal-open {
 
 iframe {
   border-radius: 30px;
+  border: 0;
 }
 
 .order_arrow {
@@ -414,6 +420,7 @@ iframe {
   width: 100%;
   height: 286px;
   background-image: url(../img/most_popular_poster.png);
+  background-image: image-set(url(../img/most_popular_poster.png) 1x, url(../img/img_2x/popular_poster_2x.png) 2x);
   border-radius: 50px;
 }
 .menu_popular_poster_title {
@@ -571,16 +578,19 @@ iframe {
 
 .how_we_coocking_poster {
   background-image: url(../img/how_we_coocking.png);
+  background-image: image-set(url(../img/how_we_coocking.png) 1x, url(../img/img_2x/how_we_coocking_2x.png) 2x);
   width: 368px;
 }
 
 .our_blog_poster {
   background-image: url(../img/our_blog.png);
+  background-image: image-set(url(../img/our_blog.png) 1x, url(../img/img_2x/our_blog_2x.png) 2x);
   width: 396px;
 }
 
 .two_pizza_poster {
   background-image: url(../img/two_pizza.png);
+  background-image: image-set(url(../img/two_pizza.png) 1x, url(../img/img_2x/two_pizza_2x.png) 2x);
   width: 500px;
   background-size: cover;
   border-radius: 30px;
@@ -589,23 +599,27 @@ iframe {
 
 .kitchen_tour_poster {
   background-image: url(../img/kitchen_tour.png);
+  background-image: image-set(url(../img/kitchen_tour.png) 1x, url(../img/img_2x/kitchen_tour_2x.png) 2x);
   width: 614px;
   position: relative;
 }
 
 .free_coffee_poster {
   background-image: url(../img/free_coffe.png);
+  background-image: image-set(url(../img/free_coffee.png) 1x, url(../img/img_2x/free_coffee_2x.png) 2x);
   width: 400px;
   position: relative;
 }
 
 .our_instgram_poster {
   background-image: url(../img/our_instagram.png);
+  background-image: image-set(url(../img/our_instagram.png) 1x, url(../img/img_2x/our_instagram_2x.png) 2x);
   width: 400px;
 }
 
 .where_poster {
   background-image: url(../img/where.png);
+  background-image: image-set(url(../img/where.png) 1x, url(../img/img_2x/where_2x.png) 2x);
   width: 320px;
   border-radius: 30px;
 }

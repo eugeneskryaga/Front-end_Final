@@ -42,7 +42,7 @@
     justify-content: space-around;
     transition: right 250ms ease-in-out;
     font-size: 20px;
-    padding: 10px;
+    padding: 30px;
 
     &_list{
         display: flex;
@@ -102,8 +102,9 @@
         gap: 10px;
 
         &_navlist {
-            gap: 10px;
+            gap: 20px;
         }
     }
     
 }
+
