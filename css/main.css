@@ -605,7 +605,7 @@ iframe {
 }
 
 .free_coffee_poster {
-  background-image: url(../img/free_coffe.png);
+  background-image: url(../img/free_coffee.png);
   background-image: image-set(url(../img/free_coffee.png) 1x, url(../img/img_2x/free_coffee_2x.png) 2x);
   width: 400px;
   position: relative;
