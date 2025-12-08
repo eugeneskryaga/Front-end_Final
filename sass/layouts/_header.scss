@@ -18,6 +18,7 @@
                 line-height: 1.1;
                 text-decoration: none;
                 transition: color 250ms ease-in-out;
+                padding: 40px 0;
             }
         }
     }
@@ -47,12 +48,13 @@
     &_list{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
 
         &_item__link {
             color: #A3A3A3;
             text-decoration: none;
             transition: color 250ms ease-in-out;
+            padding: 20px 0;
         }
     }
 
@@ -79,7 +81,7 @@
         }
 
         &_flex {
-            gap: 60px;
+            gap: 50px;
         }
 
         &_ico_list {

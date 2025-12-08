@@ -1,4 +1,6 @@
 .hero {
+    padding-top: 60px;
+
     &_flex {
         display: flex;
         justify-content: space-between;
@@ -37,6 +39,7 @@
     }
 
     &_slogan {
+        width: 410px;
         margin-bottom: 36px;
     }
 
@@ -87,9 +90,15 @@ iframe {
 
 @media (max-width: 767px) {
     .hero {
+        padding-top: 40px;
+
         &_flex {
             flex-direction: column;
             gap: 20px;
+        }
+
+        &_slogan {
+            width: 100%;
         }
 
         &_article {
@@ -157,6 +166,8 @@ iframe {
 
 @media (min-width:768px) and (max-width: 1254px) {
     .hero {
+        padding-top: 0;
+
         &_title{
             &_text{
                 font-size: 56px;
