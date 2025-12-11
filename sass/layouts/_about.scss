@@ -52,13 +52,14 @@
 
 @media (max-width:767px) {
     .about {
+        padding: 40px 0;
         &_flex {
             flex-direction: column;
-            padding: 40px 10px;
         }
 
         &_poster{
             order: -1;
+            margin: 0 auto;
 
             &_img {
                 width: 300px;
@@ -89,6 +90,10 @@
                 font-size: 14px;
                 line-height: 1.4;
             }
+
+            &_img {
+                width: 340px;
+            }
         }
 
         &_arrow {
@@ -99,9 +104,9 @@
 
 @media (min-width:768px) and (max-width: 1254px) {
     .about {
+        padding: 40px 0;
         &_flex {
             flex-direction: column;
-            padding: 60px 40px;
         }
 
         &_poster {
