@@ -7,25 +7,28 @@
     }
 
     &_poster {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        gap: 48px;
         font-size: 24px;
         font-weight: 500;
         line-height: 1.1;
-        padding: 0 26px;
+        padding: 80px 26px;
         height: 260px;
+
+        &_title {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.09;
+            margin-bottom: 40px;
+        }
 
         &_egg {
             position: absolute;
             left: -120px;
-            top: -140px;
+            top: -150px;
         }
 
         &_buritto {
             position: absolute;
+            top: -50px;
             right: -120px;
         }
 
@@ -178,7 +181,7 @@
             border-radius: 40px;
 
             &_egg {
-                top: -80px;
+                top: -100px;
                 left: -100px;
                 width: 200px;
                 height: 230px;
@@ -188,7 +191,7 @@
                 width: 200px;
                 height: 250px;
                 left: -120px;
-                bottom: -150px;
+                top: 180px;
             }
 
             &_coffe {

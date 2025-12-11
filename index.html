@@ -197,32 +197,28 @@
                 <use href="./ico/sprite.svg#icon-lightning"></use>
               </svg>
             </div>
-            <div class="hero_slogan">
-              <p class="hero_article_text">
-                We will deliver juicy pizza for your family in 30 minutes, if
-                the courier is late -
-                <span class="white_text">pizza is free!</span>
-              </p>
-            </div>
-            <div class="hero_article_video">
-              <p class="hero_article_text">Cooking process:</p>
-              <iframe
-                width="272"
-                height="194"
-                src="https://www.youtube.com/embed/F_UmiKMwRwA?si=9eERkvK9bSH1kwYR"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <button
-              class="button to_order_button"
-              id="to_order_link"
-            >
-              To order
-            </button>
+            <p class="hero_article_text">
+              We will deliver juicy pizza for your family in 30 minutes, if the
+              courier is late -
+              <span class="white_text">pizza is free!</span>
+            </p>
+            <p class="hero_article_text">Cooking process:</p>
+            <iframe
+              width="272"
+              height="194"
+              src="https://www.youtube.com/embed/F_UmiKMwRwA?si=9eERkvK9bSH1kwYR"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
             <div class="order_arrow">
+              <button
+                class="button to_order_button"
+                id="to_order_link"
+              >
+                To order
+              </button>
               <svg
                 width="190"
                 height="100"
@@ -262,7 +258,7 @@
         </div>
       </section>
       <section class="menu">
-        <div class="container menu_flex">
+        <div class="container menu_items">
           <h2
             class="menu_title"
             id="menu_link"
@@ -449,9 +445,11 @@
             </li>
           </ul>
           <div class="menu_popular_poster">
-            <h3 class="menu_popular_poster_title">MOST POPULAR PIZZA</h3>
+            <strong class="menu_popular_poster_title"
+              >MOST POPULAR PIZZA</strong
+            >
           </div>
-          <ul class="menu_pizza">
+          <ul class="menu_pizza menu_pizza_popular">
             <li class="menu_pizza_item">
               <div class="menu_pizza_card">
                 <img
@@ -607,12 +605,12 @@
       <section class="events">
         <div class="container events_flex">
           <div class="events_poster how_we_coocking_poster">
-            <strong>HOW WE COOKING</strong
-            ><button class="events_more_button button">More</button>
+            <h3 class="events_poster_title">HOW WE COOKING</h3>
+            <button class="events_more_button button">More</button>
           </div>
           <div class="events_poster our_blog_poster">
-            <strong class="events_poster_title">OUR BLOG</strong
-            ><button class="events_more_button button">More</button>
+            <h3 class="events_poster_title">OUR BLOG</h3>
+            <button class="events_more_button button">More</button>
           </div>
           <div class="events_article">
             <h2
@@ -627,11 +625,13 @@
             </p>
           </div>
           <div class="events_poster two_pizza_poster">
-            <strong
+            <h3
               class="events_poster_title"
               id="two_pizza_link"
-              >TWO PIZZA FOR 1 PRICE</strong
-            ><button class="events_more_button button">More</button>
+            >
+              TWO PIZZA FOR 1 PRICE
+            </h3>
+            <button class="events_more_button button">More</button>
             <img
               src="./img/egg.png"
               srcset="./img/egg.png 1x, ./img/img_2x/egg_2x.png 2x"
@@ -640,11 +640,13 @@
             />
           </div>
           <div class="events_poster kitchen_tour_poster">
-            <strong
+            <h3
               class="events_poster_title"
               id="kitchen_tour_link"
-              >KITCHEN TOUR</strong
-            ><button class="events_more_button button">More</button>
+            >
+              KITCHEN TOUR
+            </h3>
+            <button class="events_more_button button">More</button>
             <img
               src="./img/buritto.png"
               srcset="./img/buritto.png 1x, ./img/img_2x/buritto_2x.png 2x"
@@ -653,11 +655,13 @@
             />
           </div>
           <div class="events_poster free_coffee_poster">
-            <strong
+            <h3
               class="events_poster_title"
               id="free_coffee_link"
-              >FREE COFFEE FOR 3 PIZZA</strong
-            ><button class="events_more_button button">More</button>
+            >
+              FREE COFFEE FOR 3 PIZZA
+            </h3>
+            <button class="events_more_button button">More</button>
             <img
               src="./img/cofee.png"
               srcset="./img/cofee.png 1x, ./img/img_2x/coffee_2x.png 2x"
@@ -666,18 +670,22 @@
             />
           </div>
           <div class="events_poster our_instgram_poster">
-            <strong
+            <h3
               class="events_poster_title"
               id="history_link"
-              >OUR INSTAGRAM</strong
-            ><button class="events_more_button button">More</button>
+            >
+              OUR INSTAGRAM
+            </h3>
+            <button class="events_more_button button">More</button>
           </div>
           <div class="events_poster where_poster">
-            <strong
+            <h3
               class="events_poster_title"
               id="why_link"
-              >WHERE ARE YOU CHOOSE US?</strong
-            ><button class="events_more_button button">More</button>
+            >
+              WHERE ARE YOU CHOOSE US?
+            </h3>
+            <button class="events_more_button button">More</button>
           </div>
         </div>
       </section>
@@ -699,6 +707,7 @@
               src="./img/about_us.png"
               srcset="./img/about_us.png 1x, ./img/img_2x/pizza_set_2x.png 2x"
               alt="pizzas_image"
+              class="about_article_img"
             />
             <p class="about_article_text">
               The kitchen of each point is at least: 400-500 sq. m. meters,

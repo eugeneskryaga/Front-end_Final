@@ -10,14 +10,13 @@
         gap: 80px;
 
         &_item {
-            padding: 40px 0;
-
             &__link {
                 color: #A3A3A3;
                 font-size: 18px;
                 line-height: 1.1;
                 text-decoration: none;
                 transition: color 250ms ease-in-out;
+                display: block;
                 padding: 40px 0;
             }
         }
